@@ -1,0 +1,253 @@
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  top:55px;
+  margin: 0;
+}
+.container{
+  margin: auto;
+  width: 75%;
+}
+a{
+  text-decoration: none;
+}
+.main-nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-nav__list {
+  margin-left: auto;
+  list-style: none;
+}
+  
+.main-nav__list-item{
+  display: inline-flex;
+  padding: 0 10px 0 10px;
+}
+.main-nav__list-item a {
+  color: #e60053;
+}
+.main-nav__list-item a:hover,
+.main-nav__list-item a:active {
+  border-bottom: 1px solid #e60053;
+}
+.banner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+.banner-content h1{
+  color: #e60053;
+  letter-spacing: 2px;
+  text-shadow: 1px 3px;
+  font-size: 3em;
+  margin: 0;
+}
+.banner-content__text{
+  color: grey;
+  font-weight: bold;
+  line-height: 23px;
+  font-size: 1.2em;
+}
+.banner-content__text-link{
+  color: white;
+}
+.banner-content__text-link a{
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #99003d;
+  color: white;
+}
+.banner-content__text-link a:hover{
+  border: 1px solid #e60053;
+}
+.banner-content:nth-child(1){
+  flex: 0 1 35%; 
+}
+.banner-content:nth-child(2){
+  flex: 0 1 auto;
+}
+.projectSection-header,
+.resume-header,
+.contact-header{
+  display: flex;
+  justify-content: center;
+  color: #99003d;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  margin: 0;
+}
+.projectSection-content{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.projectSection-content a{
+  flex: 0 1 20%;
+}
+.projectSection-content a:hover{
+  opacity: 0.7;
+}
+.project-card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #99003d;
+  margin: 15px;
+  color: #99003d;
+}
+.project-card__img{
+  border-radius: 9px;
+}
+.project-card__description{
+  padding: 10px 10px 0 10px;
+  background-color: #99003d;
+  color: white;
+}
+.project-card__description h2{
+  margin: 0;
+  font-weight: bold;
+}
+.project-card__description p{
+  margin: 0;
+}
+.description-list{
+  display: flex;
+  list-style: none;
+}
+.description-list li{
+  margin: 5px;
+  padding: 3px;
+  color: #99003d;
+  background-color: white;
+  border-radius: 4px;
+}
+.article h1{
+  letter-spacing: 2px;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+.article-list{
+  margin: 0;
+}
+.article-list img{
+  width:50px;
+}
+.resume-body{
+  color:#e60053;
+}
+.contact-form{
+  margin: 15px;
+}
+.form-group{
+  display: flex;
+  margin: 20px;
+  padding-bottom: 10px;
+}
+.form-group label{
+  padding-right: 10px;
+}
+.form-group input{
+  width: 100%;
+  padding: 5px;
+  font-size: 0.8rem;
+  outline:none;
+  border: 1px solid #e60053;
+  border-radius: 4px;
+  height: 40px;
+}
+.form-group input:hover{
+  border-top:1px solid white;
+  border-right:1px solid white;
+  border-bottom:1px solid #e60053;
+  border-left:1px solid white;
+  transition:1s;
+}
+.form-group textarea{
+  width: 100%;
+  height: 90px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #e60053;
+  padding: 5px;
+}
+.form-group:nth-child(4){
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.form-group button{
+  cursor: pointer;
+  padding: 13px;
+  color: white;
+  background-color: #e60053;
+  border-radius: 4px;
+  border: 0;
+}
+.form-group button:hover{
+  background-color: #99003d;
+  transition: 1s;
+}
+.nav-div{
+  display: none;
+  justify-content: center;
+}
+.nav-list{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  position: fixed;
+  bottom: 0;
+  border: 5px solid #99003d;
+  border-radius: 11px;
+  margin-bottom: 0;
+}
+.nav-list__item{
+  padding: 5px 20px 5px 20px;
+}
+.nav-list__item a{
+  color: #e60053;
+}
+.main-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 50px 0 50px;
+}
+.main-footer__links{
+  margin: auto;
+}
+.main-footer__links a{
+  padding: 0 15px 0 15px;
+  color: #e60053;
+}
+@media (max-width: 520px){
+  .main-nav{
+    justify-content: center;
+  }
+  .main-nav__list{
+    display: none;
+  }
+  .nav-div{
+    display: flex;
+  }
+  .main-footer{
+    margin-bottom: 55px;
+  }
+}
