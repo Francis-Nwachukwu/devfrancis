@@ -219,20 +219,24 @@ a{
 }
 .nav-div{
   display: none;
-  justify-content: center;
+  justify-content: space-evenly;
+  
 }
 .nav-list{
+  width: 100%;
   display: flex;
   justify-content: center;
   list-style: none;
+  background-color: white;
   position: fixed;
   bottom: 0;
-  border: 5px solid #99003d;
-  border-radius: 11px;
+  border-top: 1px solid #99003d;
   margin-bottom: 0;
+  padding: 0;
 }
 .nav-list__item{
-  padding: 5px 20px 5px 20px;
+  z-index: 2;
+  padding: 5px 30px 5px 30px;
 }
 .nav-list__item a{
   color: #e60053;
