@@ -11,6 +11,17 @@ canvas {
   bottom: 0;
   z-index: -2;
 }
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #99003d;
+  border-radius: 10px;
+}
 
 body{
   font-family: 'Courier New', Courier, monospace;
@@ -101,15 +112,16 @@ a{
 .projectSection-content a{
   flex: 0 1 20%;
 }
-.projectSection-content a:hover{
-  opacity: 0.7;
-}
 .project-card{
   display: flex;
   flex-direction: column;
   border: 1px solid #99003d;
   margin: 15px;
   color: #99003d;
+}
+.project-card:hover{
+  box-shadow: 0 10px 10px 0 grey, 0 10px 10px 0 grey;
+  transition: 1s;
 }
 .project-card__img{
   border-radius: 9px;
@@ -128,6 +140,7 @@ a{
 }
 .description-list{
   display: flex;
+  flex-wrap:wrap;
   list-style: none;
 }
 .description-list li{
@@ -248,6 +261,10 @@ a{
     display: flex;
   }
   .main-footer{
-    margin-bottom: 55px;
+    margin-bottom: 60px;
+  }
+  .container{
+    margin: auto;
+    width: 85%;
   }
 }
