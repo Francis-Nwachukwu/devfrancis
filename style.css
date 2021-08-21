@@ -249,6 +249,7 @@ a{
 }
 .main-footer__links{
   margin: auto;
+  display: flex;
 }
 .main-footer__links a{
   padding: 0 15px 0 15px;
