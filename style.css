@@ -236,6 +236,7 @@ a{
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px 50px 0 50px;
+  margin-bottom: 50px;
 }
 .main-footer__links{
   margin: auto;
