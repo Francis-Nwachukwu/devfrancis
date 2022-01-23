@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nwachukwu Francis - Frontend Developer</title>
+    <link rel="icon" type="image/png" href="./images/DevFrancis logo.jpeg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontcss/all.min.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="home-header">
+        <nav class="main-nav">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/DevFrancis.jpeg" alt="company logo" />
+            </a>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="projects.html">Projects</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="./Francis-CV.docx" target="_blank">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="contact-form">
+          <h1 class="contact-header">Contact Me</h1>
+          <div class="contact-container">
+            <div class="formBox">
+              <form
+                action="https://formspree.io/f/mleaolpr"
+                class="contact-form"
+                method="POST"
+              >
+                <div class="form-group">
+                  <input type="text" placeholder="Name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Your message"></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="register-btn" type="submit" value="Send">
+                    Send Message
+                  </button>
+                </div>
+                <input type="hidden" name="_next" value="index.html" />
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <hr />
+        <div class="main-footer">
+          <div class="main-footer__text">
+            <p>&copy; Nwachukwu Francis 2021</p>
+          </div>
+          <div class="main-footer__links">
+            <a href="">TW</a>
+            <a href="https://github.com/Francis-Nwachukwu" title="Github page"
+              >GH</a
+            >
+            <a
+              href="http://linkedin.com/in/francis-nwachukwu-a826a9175"
+              title="LinkedIn page"
+              >LN</a
+            >
+            <a href="https://t.me/francisIN" title="Telegram chat">TG</a>
+          </div>
+        </div>
+      </footer>
+      <div class="nav-div">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="index.html" title="Home"
+              ><i class="fas fa-home" style="font-size: 24px"></i>Home</a
+            >
+          </li>
+          <li class="nav-list__item">
+            <a href="projects.html" title="Projects"
+              ><i class="fab fa-dev" style="font-size: 24px"></i>Projects</a
+            >
+          </li>
+          <li class="nav-list__item">
+            <a href="./Francis-CV.pdf" target="_blank" title="Resume"
+              ><i class="far fa-file" style="font-size: 24px"></i>Resume</a
+            >
+          </li>
+          <li class="nav-list__item">
+            <a href="contact.html" title="Contact"
+              ><i class="fas fa-phone" style="font-size: 24px"></i>Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
