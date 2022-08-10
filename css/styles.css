@@ -322,7 +322,7 @@ Sidebar
   display: grid;
   margin-top: 3rem;
   width: 20rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
 }
 .social-icon {
@@ -676,14 +676,14 @@ Skills
 .value-81 {
   width: 81%;
 }
+.value-74 {
+  width: 74%;
+}
 .value-68 {
   width: 68%;
 }
-.value-57 {
-  width: 57%;
-}
-.value-30 {
-  width: 30%;
+.value-59 {
+  width: 59%;
 }
 .skill-text {
   position: absolute;
