@@ -720,6 +720,7 @@ Blog
   left: 0;
   width: 100%;
   height: 100%;
+  transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   visibility: visible;
   -webkit-backface-visibility: hidden;
@@ -852,14 +853,14 @@ Single Page
 }
 
 .page-info a {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--clr-pink-3);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
 .page-info a:hover {
-  color: var(--clr-pink-4);
+  text-decoration: underline;
 }
 /*
 =============== 
